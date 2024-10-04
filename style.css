@@ -117,7 +117,7 @@ span{
 }
 .home-img img{
     position: relative;
-    top: 0rem;
+    top: 3rem;
     width: 32vw;
     border-radius: 50%;
     box-shadow: 0 0 25px var(--main-color);
@@ -146,7 +146,7 @@ span{
     font-size: 2.5rem;
     border-radius: 50%;
     color:var(--main-color);
-    margin: 3rem 4rem 3rem 0;
+    margin: 3rem 1.5rem 3rem 0;
     transition: 0.3s ease-in-out;
 }
 .social-icons a:hover{
@@ -158,9 +158,7 @@ span{
 }
 
 /*botones en general*/
-p{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+
 .btn{
     display: inline-block;
     padding: 1rem 2.8rem;
