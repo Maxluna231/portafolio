@@ -1,0 +1,21 @@
+/*modo oscuro*/
+#toogle{
+    display: none;
+}
+
+#label_toogle{
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   font-size: 2em;
+   color:#fffb00;
+   cursor: pointer;
+}
+
+.dark{
+    --bg--color:#000000;
+    --second-bg-color:#131313;
+    --text-color:white;
+    --main-color:#fffb00;
+    transition: all 0.5s ease;
+}

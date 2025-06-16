@@ -3,6 +3,18 @@ let navbar   = document.querySelector('.navbar');
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
 
+let toggle=document.getElementById('toggle');
+let label_toggle=document.getElementById('label-toggle');
+toggle.addEventListener('change',(event)=>{
+    let checked=event.target.checked;
+    document.body.classList.toggle('dark');
+    if(checked === true){
+        label_toggle.innerHTML='<i class="bx bx-sun"></i>';
+      }else{
+        label_toggle.innerHTML='<i class="bx bx-moon"></i>';
+      }
+    });
+
 window.onscroll = () => {
     sections.forEach(sec => {
        let top = window.scrollY;
@@ -23,3 +35,4 @@ menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
 }
+
