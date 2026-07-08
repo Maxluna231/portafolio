@@ -203,7 +203,7 @@ function App() {
             </div>
 
             <div className="btn-group">
-              <a href="/download/Curriculum Vitae.pdf" download="CV_Maximino_Luna" className="btn">
+              <a href="/download/CV_Maximino_Luna.pdf" download="CV_Maximino_Luna" className="btn">
                 Curriculum
               </a>
               <a href="#contact" className="btn btn-outline">
