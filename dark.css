@@ -1,21 +1,31 @@
-/*modo oscuro*/
-#toogle{
-    display: none;
+body.dark {
+  --bg-color: #101419;
+  --second-bg-color: #151b22;
+  --surface-color: rgba(21, 27, 34, 0.82);
+  --text-color: #f3f7f6;
+  --muted-color: #aab7bc;
+  --main-color: #2dd4bf;
+  --accent-color: #f59e0b;
+  --line-color: rgba(45, 212, 191, 0.2);
+  --shadow-color: rgba(0, 0, 0, 0.34);
+  background:
+    radial-gradient(circle at 8% 18%, rgba(245, 158, 11, 0.11), transparent 27rem),
+    linear-gradient(135deg, #101419 0%, #17212a 100%);
 }
 
-#label_toogle{
-   position: absolute;
-   top: 10px;
-   right: 10px;
-   font-size: 2em;
-   color:#fffb00;
-   cursor: pointer;
+body.dark .header {
+  background: rgba(16, 20, 25, 0.82);
 }
 
-.dark{
-    --bg--color:#000000;
-    --second-bg-color:#131313;
-    --text-color:white;
-    --main-color:#fffb00;
-    transition: all 0.5s ease;
+body.dark .text-animation span::after {
+  background: var(--bg-color);
+}
+
+body.dark .btn-outline {
+  color: var(--main-color);
+}
+
+body.dark .contact input,
+body.dark .contact textarea {
+  background: rgba(16, 20, 25, 0.82);
 }
