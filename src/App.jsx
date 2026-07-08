@@ -182,7 +182,16 @@ function App() {
               creando soluciones funcionales, limpias y orientadas a resolver problemas 
               reales.
             </p>
-
+ <div className="home-img">
+            <img
+              src="/image/foto_perfil_portafolio.jpg"
+              alt="Foto de portafolio"
+              onError={(event) => {
+                event.currentTarget.style.display = 'none';
+                event.currentTarget.parentElement.classList.add('image-fallback');
+              }}
+            />
+          </div>
             <div className="social-icons">
               <a
                 href="https://www.linkedin.com/in/maximino-luna-de-la-cruz/"
@@ -212,16 +221,7 @@ function App() {
             </div>
           </div>
 
-          <div className="home-img">
-            <img
-              src="/image/foto_perfil_portafolio.jpg"
-              alt="Foto de portafolio"
-              onError={(event) => {
-                event.currentTarget.style.display = 'none';
-                event.currentTarget.parentElement.classList.add('image-fallback');
-              }}
-            />
-          </div>
+         
         </section>
 
         <section className="education" id="education">
